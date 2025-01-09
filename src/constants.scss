@@ -14,3 +14,13 @@ $font-normal: 300;
 $font-bold: 600;
 $primary-bg: #d1e8ff;
 $primary-border-color: #84c2ff;
+
+h1 {
+  color: $primary;
+  font-size: 24px;
+  margin: 0 0 24px;
+
+  span {
+    margin-left: 16px;
+  }
+}
