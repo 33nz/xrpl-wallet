@@ -1,13 +1,14 @@
 @import "../constants.scss";
 
 header {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   background-color: $primary;
   color: $white;
-  padding: 16px;
+  display: flex;
   height: 72px;
+  justify-content: space-between;
+  padding: 16px;
+  
 
   .header-logo {
     cursor: pointer;

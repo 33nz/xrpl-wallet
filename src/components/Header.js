@@ -1,4 +1,4 @@
-import './header.scss'
+import './headers.scss'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWallet, faGear } from '@fortawesome/free-solid-svg-icons'
