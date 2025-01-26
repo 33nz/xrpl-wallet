@@ -1,5 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faThumbsUp, faTrash, faList } from '@fortawesome/free-solid-svg-icons'
+import {
+  faThumbsUp,
+  faTrash,
+  faList,
+  faT,
+} from '@fortawesome/free-solid-svg-icons'
+import Button from 'react-bootstrap/Button'
 
 import './manage-account.scss'
 
@@ -15,6 +21,12 @@ function ManageAccount() {
         <li>
           <div className="address">Fake rAddress</div>
           <div className="buttons-container"></div>
+          <Button variant="prmary">
+            <FontAwesomeIcon icon={faThumbsUp} />
+          </Button>
+          <Button variant="danger">
+            <FontAwesomeIcon icon={faTrash} />
+          </Button>
         </li>
       </ul>
     </div>
