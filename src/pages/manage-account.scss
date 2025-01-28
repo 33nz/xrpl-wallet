@@ -1,1 +1,30 @@
-@import '../constants.scss'
+@import '../constants.scss';
+
+.manage-accounts {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4px 0;
+      border-bottom: 1px solid $border-color;
+
+      &:first-child {
+        border-top: 1px solid $border-color;
+      }
+    }
+
+    .button-container {
+      display: flex;
+      gap: 16px;
+
+      button {
+        padding: 4px 8px;
+      }
+    }
+  }
+} 

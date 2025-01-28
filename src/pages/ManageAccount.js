@@ -19,9 +19,11 @@ function ManageAccount() {
 
       <ul>
         <li>
-          <div className="address">Fake rAddress</div>
+          <div className="address">
+            this is where the addresses will get listed
+          </div>
           <div className="buttons-container"></div>
-          <Button variant="prmary">
+          <Button variant="primary">
             <FontAwesomeIcon icon={faThumbsUp} />
           </Button>
           <Button variant="danger">
