@@ -11,7 +11,7 @@ import './manage-account.scss'
 
 function ManageAccount() {
   return (
-    <div className="manage-account">
+    <div className="manage-accounts">
       <h1>
         <FontAwesomeIcon icon={faList} />
         <span>My Accounts</span>
