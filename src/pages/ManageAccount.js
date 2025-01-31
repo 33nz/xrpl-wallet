@@ -6,6 +6,7 @@ import {
   faT,
 } from '@fortawesome/free-solid-svg-icons'
 import Button from 'react-bootstrap/Button'
+import Link from 'react-router-dom'
 
 import './manage-account.scss'
 
@@ -31,6 +32,11 @@ function ManageAccount() {
           </Button>
         </li>
       </ul>
+      <div className="action-buttons">
+        <Link>
+          <Button variant="primary">Import</Button>
+        </Link>
+      </div>
     </div>
   )
 }
