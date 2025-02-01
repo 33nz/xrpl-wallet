@@ -33,8 +33,11 @@ function ManageAccount() {
         </li>
       </ul>
       <div className="action-buttons">
-        <Link>
+        <Link to="/import-account">
           <Button variant="primary">Import</Button>
+        </Link>
+        <Link to="/generate-account">
+          <Button variant="success">Generate New</Button>
         </Link>
       </div>
     </div>
@@ -42,3 +45,4 @@ function ManageAccount() {
 }
 
 export default ManageAccount
+Í
