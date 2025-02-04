@@ -45,4 +45,3 @@ function ManageAccount() {
 }
 
 export default ManageAccount
-Í
