@@ -18,5 +18,5 @@ export const AccountProvider = ({ children }) => {
   )
 }
 
-// Custom Hookß
+// Custom Hook
 export const useAccounts = () => useContext(AccountContext)
