@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Wallet } from 'xrpl'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileImport } from '@fortawesome/free-solid-svg-icons'
@@ -16,6 +17,17 @@ function ImportAccount() {
 
   const handleImportAccount = (event) => {
     event.preventDefault()
+
+    // Derive the address from the imported family seed
+    const newAccount = Wallet.deriveWallet(seed)
+
+    // Create the new account object
+
+    // Update the application state
+
+    // Update the local storage
+
+    // Navigate back to the manage accounts page
   }
 
   return (
