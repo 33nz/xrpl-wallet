@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Wallet } from 'xrpl'
 
+import { useAccounts } from '../contexts/AccountContext'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileImport } from '@fortawesome/free-solid-svg-icons'
 import Button from 'react-bootstrap/Button'
@@ -10,6 +11,7 @@ import './import-account.scss'
 
 function ImportAccount() {
   const [seed, setSeed] = useState('')
+  const { addAccount } = useAccounts()
 
   const handleSeedChange = (event) => {
     setSeed(event.target.value)
@@ -22,10 +24,15 @@ function ImportAccount() {
     const newAccount = Wallet.deriveWallet(seed)
 
     // Create the new account object
+    const account = {
+      address: newAccount.classicAddress,
+      seed: newAccount.seed,
+    }
 
     // Update the application state
 
     // Update the local storage
+    addAccount(account)
 
     // Navigate back to the manage accounts page
   }
@@ -57,5 +64,3 @@ function ImportAccount() {
 }
 
 export default ImportAccount
-
-// this is a test
