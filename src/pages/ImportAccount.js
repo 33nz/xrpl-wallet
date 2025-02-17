@@ -33,8 +33,6 @@ function ImportAccount() {
 
     // Update the local storage
     addAccount(account)
-
-    // Navigate back to the manage accounts page
   }
 
   return (

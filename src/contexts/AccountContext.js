@@ -8,7 +8,12 @@ export const AccountProvider = ({ children }) => {
   const [accounts, setAccounts] = useState([])
 
   const addAccount = (account) => {
-    setAccounts((prevAccounts) => [...prevAccounts, account])
+    // setAccounts((prevAccounts) => [...prevAccounts, account])
+    setAccounts((prevAccounts) => {
+      const updatedAccounts = [...prevAccounts, account]
+      localStorage.setItem('accounts', JSON.stringify(updatedAccounts))
+      return updatedAccounts
+    })
   }
 
   return (
