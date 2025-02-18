@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Wallet } from 'xrpl'
 
 import { useAccounts } from '../contexts/AccountContext'
@@ -12,6 +13,7 @@ import './import-account.scss'
 function ImportAccount() {
   const [seed, setSeed] = useState('')
   const { addAccount } = useAccounts()
+  const navigate = useNavigate()
 
   const handleSeedChange = (event) => {
     setSeed(event.target.value)
@@ -30,9 +32,10 @@ function ImportAccount() {
     }
 
     // Update the application state
-
-    // Update the local storage
     addAccount(account)
+
+    // Navigate back to the main account
+    navigate('/manage-account')
   }
 
   return (
