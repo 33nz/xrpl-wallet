@@ -13,3 +13,9 @@ root.render(
     </AccountProvider>
   </React.StrictMode>
 )
+
+const newThing = {
+  sum: function (a, b) {
+    return a + b
+  },
+}
